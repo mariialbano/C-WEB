@@ -22,21 +22,6 @@ namespace MeuProjetoEmMVC.Controllers
             return View(home);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        public IActionResult Contatos1()
-        {
-            ContatosModel contatos = new ContatosModel();
-
-            contatos.Github = "https://github.com/mariialbano";
-            contatos.Linkedin = "https://www.linkedin.com/in/mariana-albano-6a3051269/";
-
-            return View(contatos);
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
